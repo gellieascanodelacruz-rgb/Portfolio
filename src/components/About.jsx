@@ -20,13 +20,19 @@ export default function About() {
         <div className="about-grid">
           {/* Bio text */}
           <div className="about-bio-card">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.25rem" }}>
-              <span className="sample-badge">Sample Profile Summary</span>
-            </div>
             <p>{personalInfo.fullBio}</p>
-            <p>
-              Driven by curiosity and a systematic approach to problem solving, I actively practice version control, responsive styling, and relational data modeling. I am eager to contribute to collaborative engineering teams through an undergraduate internship or OJT placement.
-            </p>
+            <div style={{ marginTop: "1.5rem" }}>
+              <h4 style={{ fontSize: "0.875rem", fontFamily: "var(--font-mono)", textTransform: "uppercase", letterSpacing: "0.06em", color: "#fda4af", marginBottom: "0.75rem" }}>
+                Key Focus Areas
+              </h4>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+                {personalInfo.focusAreas && personalInfo.focusAreas.map((area, idx) => (
+                  <span key={idx} className="focus-tag">
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* 4 Small Info Cards */}

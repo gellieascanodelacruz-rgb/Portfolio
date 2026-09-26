@@ -102,17 +102,17 @@ export default function ProjectModal({ project, onClose }) {
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary btn-sm"
-              title="Demo link (Sample/Placeholder)"
+              title="Visit Live Demo"
             >
               <Icon name="ExternalLink" size={16} />
-              <span>Visit Demo (Dummy Link)</span>
+              <span>Visit Demo</span>
             </a>
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary btn-sm"
-              title="GitHub repository (Sample/Placeholder)"
+              title="View GitHub Repository"
             >
               <Icon name="Github" size={16} />
               <span>View Code Repository</span>

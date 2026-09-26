@@ -12,9 +12,8 @@ export default function Navbar() {
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
-    { label: "Experience", href: "#experience" },
-    { label: "Certifications", href: "#certifications" },
     { label: "Education", href: "#education" },
+    { label: "Resume", href: "#resume" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -47,8 +46,8 @@ export default function Navbar() {
     <>
       <header className={`navbar ${isScrolled ? "scrolled" : ""}`}>
         <div className="container navbar-container">
-          <a href="#home" className="nav-brand" aria-label="Alex Morgan Portfolio Home">
-            <div className="brand-badge">AM</div>
+          <a href="#home" className="nav-brand" aria-label={`${personalInfo.name} Portfolio Home`}>
+            <div className="brand-badge">GD</div>
             <div className="brand-details">
               <span className="brand-name">{personalInfo.name}</span>
               <span className="brand-role">Undergraduate IT</span>

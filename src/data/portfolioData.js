@@ -1,259 +1,272 @@
 /**
- * PORTFOLIO DATA (SAMPLE / PLACEHOLDER DATA)
- * ============================================================================
- * IMPORTANT NOTE:
- * All information in this file is strictly fictional/dummy data designed for
- * an undergraduate IT student portfolio.
- * 
- * TO PERSONALIZE:
- * Replace the values below with your real details, projects, and links.
- * ============================================================================
+ * GELLIE ANNE DELA CRUZ - PORTFOLIO DATA
+ * Bachelor of Science in Information Technology
+ * Major in Web and Mobile Application Development
+ * Bulacan State University – Bustos Campus
  */
 
 export const personalInfo = {
-  name: "Alex Morgan",
-  title: "IT Student & Aspiring Software Developer",
-  status: "Open to Internship / OJT",
-  location: "Manila, Philippines",
+  name: "Gellie Anne Dela Cruz",
+  title: "Full-Stack Web Developer",
+  status: "Open to OJT / Internship — Starting November 16, 2026",
+  location: "Baliuag City, Bulacan, Philippines",
   shortBio:
-    "An undergraduate Information Technology student passionate about building practical web applications, solving technical problems, and continuously learning new technologies.",
+    "Full-Stack Web Developer focused on building functional, user-friendly, and practical web applications.",
   fullBio:
-    "Alex Morgan is an undergraduate Information Technology student with hands-on experience developing academic and personal software projects. Alex enjoys creating web applications, working with databases, and exploring modern development technologies. Through academic projects and independent learning, Alex has developed practical experience in frontend development, backend logic, database management, and system design.",
-  email: "alex.morgan@example.com",
-  github: "https://github.com/alexmorgan",
-  linkedin: "https://linkedin.com/in/alexmorgan",
-  resumeUrl: "#resume", // Can be updated with an actual PDF link or file in public/
+    "I am a Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. I am passionate about turning ideas into functional and user-friendly web applications while continuously improving my development skills. I have hands-on experience in front-end and back-end development, database management, API integration, and developing web, desktop, and system-based projects. I enjoy working with modern web technologies and creating clean, efficient, and practical solutions.",
+  email: "gellieascanodelacruz@gmail.com",
+  github: "https://github.com/gellieascanodelacruz-rgb",
+  linkedin: "https://linkedin.com/in/gellie-anne-dela-cruz-230854291",
+  resumeUrl: "/Gellie Anne Dela Cruz_Resume.pdf",
   aboutCards: [
     {
       id: "card-status",
       label: "Current Status",
-      value: "Undergraduate Student",
-      subtext: "3rd Year BS Information Technology",
+      value: "4th Year BSIT Student",
+      subtext: "Bulacan State University – Bustos Campus",
       icon: "GraduationCap",
     },
     {
       id: "card-field",
-      label: "Field of Interest",
-      value: "IT & Software Development",
-      subtext: "Web Development & Databases",
+      label: "Major & Specialization",
+      value: "Web & Mobile App Dev",
+      subtext: "Full-Stack & System Projects",
       icon: "Code",
     },
     {
       id: "card-availability",
-      label: "Availability",
-      value: "Open to Internship / OJT",
-      subtext: "Mid 2026 / Academic Requirement",
+      label: "OJT / Practicum",
+      value: "Open Starting Nov 16, 2026",
+      subtext: "Academic Internship Placement",
       icon: "CheckCircle",
       highlight: true,
     },
     {
       id: "card-location",
       label: "Location",
-      value: "Manila, Philippines",
-      subtext: "Available for On-site or Remote",
+      value: "Baliuag City, Bulacan",
+      subtext: "Philippines (Open to Hybrid / Remote)",
       icon: "MapPin",
     },
+  ],
+  focusAreas: [
+    "Full-Stack Web Development",
+    "Frontend Development",
+    "Backend Development",
+    "Database Management",
+    "API Integration",
+    "Responsive Web Design",
+    "Software Development",
+    "Software Testing",
   ],
 };
 
 export const skillsData = {
   categories: [
     {
-      title: "Programming",
+      title: "Frontend Development",
       icon: "Code",
       skills: [
-        { name: "JavaScript", level: "Intermediate", percent: 75 },
-        { name: "Python", level: "Intermediate", percent: 70 },
-        { name: "PHP", level: "Intermediate", percent: 65 },
-        { name: "HTML5", level: "Intermediate", percent: 85 },
-        { name: "CSS3", level: "Intermediate", percent: 80 },
+        { name: "ReactJS", level: "Proficient", percent: 88 },
+        { name: "JavaScript", level: "Proficient", percent: 88 },
+        { name: "TypeScript", level: "Intermediate", percent: 75 },
+        { name: "HTML5 & CSS3", level: "Proficient", percent: 92 },
+        { name: "Tailwind CSS", level: "Proficient", percent: 85 },
+        { name: "React Native", level: "Intermediate", percent: 75 },
+        { name: "Responsive Design", level: "Proficient", percent: 90 },
       ],
     },
     {
-      title: "Frameworks & Libraries",
-      icon: "Layers",
-      skills: [
-        { name: "React.js", level: "Intermediate", percent: 72 },
-        { name: "Node.js", level: "Developing", percent: 60 },
-        { name: "Tailwind CSS", level: "Intermediate", percent: 78 },
-      ],
-    },
-    {
-      title: "Databases",
-      icon: "Database",
-      skills: [
-        { name: "MySQL", level: "Intermediate", percent: 70 },
-        { name: "Firebase", level: "Developing", percent: 62 },
-        { name: "Firestore", level: "Developing", percent: 60 },
-      ],
-    },
-    {
-      title: "Tools & Workflow",
-      icon: "Wrench",
-      skills: [
-        { name: "Git", level: "Intermediate", percent: 75 },
-        { name: "GitHub", level: "Intermediate", percent: 75 },
-        { name: "VS Code", level: "Intermediate", percent: 85 },
-        { name: "Figma", level: "Familiar", percent: 58 },
-      ],
-    },
-    {
-      title: "Core Concepts & Others",
+      title: "Backend Development",
       icon: "Cpu",
       skills: [
-        { name: "REST APIs", level: "Intermediate", percent: 70 },
-        { name: "Authentication", level: "Developing", percent: 65 },
-        { name: "CRUD Operations", level: "Intermediate", percent: 80 },
-        { name: "Responsive Web Design", level: "Intermediate", percent: 82 },
-        { name: "Database Design", level: "Intermediate", percent: 68 },
-        { name: "UI/UX Principles", level: "Familiar", percent: 60 },
+        { name: "Node.js", level: "Proficient", percent: 82 },
+        { name: "PHP", level: "Intermediate", percent: 76 },
+        { name: "Django", level: "Intermediate", percent: 70 },
+        { name: "Java", level: "Intermediate", percent: 76 },
+      ],
+    },
+    {
+      title: "Databases & Backend Services",
+      icon: "Database",
+      skills: [
+        { name: "PostgreSQL", level: "Intermediate", percent: 80 },
+        { name: "MySQL / SQL", level: "Proficient", percent: 86 },
+        { name: "Supabase", level: "Intermediate", percent: 75 },
+        { name: "Firebase", level: "Proficient", percent: 82 },
+      ],
+    },
+    {
+      title: "API & Payment Integration",
+      icon: "Layers",
+      skills: [
+        { name: "REST APIs", level: "Proficient", percent: 85 },
+        { name: "API Integration", level: "Proficient", percent: 85 },
+        { name: "PayPal API", level: "Intermediate", percent: 75 },
+      ],
+    },
+    {
+      title: "Development & Version Control",
+      icon: "Wrench",
+      skills: [
+        { name: "Git", level: "Proficient", percent: 85 },
+        { name: "GitHub", level: "Proficient", percent: 85 },
+        { name: "Visual Studio Code", level: "Proficient", percent: 90 },
+        { name: "Postman", level: "Intermediate", percent: 80 },
+        { name: "XAMPP", level: "Proficient", percent: 85 },
+        { name: "Apache NetBeans", level: "Intermediate", percent: 75 },
+      ],
+    },
+    {
+      title: "Testing & Other Technologies",
+      icon: "CheckCircle",
+      skills: [
+        { name: "Selenium", level: "Intermediate", percent: 72 },
+        { name: "Figma", level: "Intermediate", percent: 78 },
+        { name: "Android Studio", level: "Intermediate", percent: 70 },
+        { name: "Unity", level: "Familiar", percent: 65 },
+        { name: "VMware", level: "Intermediate", percent: 72 },
       ],
     },
   ],
   levelsLegend: [
     {
       name: "Familiar",
-      description: "Basic knowledge and classroom exposure; able to understand syntax and concepts.",
-    },
-    {
-      name: "Developing",
-      description: "Actively building projects; understanding core logic and debugging with documentation.",
+      description: "Working knowledge and concepts, able to implement with documentation.",
     },
     {
       name: "Intermediate",
-      description: "Comfortable building functional applications independently with established best practices.",
+      description: "Comfortable building and integrating functional application features.",
+    },
+    {
+      name: "Proficient",
+      description: "Hands-on experience building projects independently following best practices.",
     },
   ],
 };
 
 export const projectsData = [
   {
-    id: "docuflow",
-    title: "DocuFlow",
-    tagline: "Centralized Document Management & Workflow Approval System",
-    category: "Document Management System",
-    badge: "Academic Capstone / Team Project",
+    id: "osoadocs",
+    title: "OSOADOCS",
+    tagline: "Centralized Document Workflow and Management System",
+    category: "Web Application / System",
+    badge: "Featured System Project",
     summary:
-      "A centralized web-based document management platform designed to organize document submissions, approvals, requirements, and retrieval workflows.",
+      "A centralized web-based system designed to streamline document submission, organization, tracking, and management for student organizations.",
     problem:
-      "Academic and administrative departments often suffer from lost submissions, delayed paper approvals, and lack of accountability in document routing.",
+      "Student organizations and academic offices often struggle with scattered document submissions, untracked approval pipelines, and inefficient paper-based tracking.",
     solution:
-      "Engineered an automated web portal where students and staff can upload documents, track review statuses in real time, and receive notification logs at every stage.",
-    technologies: ["React.js", "Node.js", "MySQL", "Tailwind CSS"],
-    role: "Full-Stack Developer (Frontend UI, Database Schema & Routing Logic)",
+      "Built a unified web-based document platform that centralizes organizational files, provides structured review workflows, and allows real-time tracking of submission statuses.",
+    technologies: ["ReactJS", "Web Technologies", "Database Management", "Document Workflow"],
+    role: "Full-Stack Developer",
     features: [
-      "Role-based access control (Admin, Approver, Submitter)",
-      "Document submission with multi-format validation",
-      "Multi-stage approval workflow with status markers",
-      "Deadline tracking and urgent submission alerts",
-      "Real-time document tracking audit log",
-      "Comprehensive administrative dashboard with metrics",
+      "Centralizes organizational documents in one secure repository",
+      "Provides structured document workflows for reviews and approvals",
+      "Supports document submission, organization, and real-time tracking",
+      "Designed to improve document accessibility and organizational efficiency",
     ],
-    github: "https://github.com/alexmorgan/docuflow-dms",
-    demo: "https://docuflow-demo.example.com",
+    github: "https://github.com/gellieascanodelacruz-rgb",
+    demo: "#contact",
     caseStudy: {
       overview:
-        "DocuFlow was conceptualized to address bottlenecks in departmental paper processes. The goal was to eliminate physical paper routing while ensuring strict authorization hierarchies.",
+        "OSOADOCS was designed to eliminate paperwork bottlenecks in student organizations. It centralizes all official records into a clean digital workflow with end-to-end tracking.",
       architecture: [
-        "Frontend: React.js with modular component structure and Tailwind CSS for responsive styling.",
-        "Backend: Node.js Express REST API handling authentication tokens, file processing, and routing.",
-        "Database: Relational MySQL schema with foreign key constraints across users, documents, and logs.",
+        "Frontend: Responsive ReactJS interface with real-time feedback and document previewing.",
+        "Backend: Structured backend APIs managing secure submission validation and workflow transitions.",
+        "Database: Relational database architecture organizing organizations, document categories, and audit records.",
       ],
       databaseHighlights:
-        "Designed tables for Users, Roles, Documents, Approvals, and AuditLogs with timestamp indexing for fast retrieval.",
+        "Engineered relational schemas ensuring high data integrity, organized categories, and traceable submission logs.",
       challengesAndLearnings:
-        "Managing multi-tier document status state transitions taught me how to structure predictable database transactions and prevent race conditions when two approvers review simultaneously.",
+        "Implementing multi-step approval states helped deepen my understanding of system workflow state machines and error handling.",
       keyMetrics: [
-        { label: "Target Users", val: "Students & Staff" },
-        { label: "Architecture", val: "REST API + SPA" },
-        { label: "Security", val: "Role-Based ACL" },
+        { label: "Platform", val: "Web-Based" },
+        { label: "Target", val: "Student Orgs" },
+        { label: "Focus", val: "Document Workflow" },
       ],
     },
   },
   {
-    id: "stayease",
-    title: "StayEase",
-    tagline: "Accommodation Browsing & Reservation Platform Concept",
-    category: "Accommodation Management Platform",
-    badge: "Independent / Academic Project",
+    id: "lodgr",
+    title: "LODGR",
+    tagline: "Accommodation & Hosting Services Web Application",
+    category: "Full-Stack Web Application",
+    badge: "Full-Stack Web App",
     summary:
-      "A web application concept for browsing accommodations, managing user accounts, and handling online reservations.",
+      "A responsive accommodation platform for browsing listings, managing accounts, and making reservations.",
     problem:
-      "Students and young professionals relocating to university towns struggle to find verified, budget-friendly accommodations with clear amenities and transparent reservation rules.",
+      "Users and students seeking accommodations need an intuitive, reliable way to view property listings, check room availability, and complete secure reservations online.",
     solution:
-      "Developed a clean, user-friendly reservation portal with filterable property catalogs, saved favorites, Google authentication, and booking confirmation simulation.",
-    technologies: ["React.js", "Firebase", "Firestore", "JavaScript"],
-    role: "Frontend Developer & Cloud Database Integration",
+      "Developed a modern web application featuring dynamic listing exploration, Firebase user authentication, personalized account dashboards, and PayPal payment integration.",
+    technologies: ["ReactJS", "Firebase", "PayPal API", "Responsive Web Design"],
+    role: "Full-Stack Web Developer",
     features: [
-      "Secure user authentication with Google Sign-In & Email",
-      "Dynamic property listings with amenity tags and pricing",
-      "Real-time Firestore query filtering by city & price",
-      "Personalized user profile and booking history dashboard",
-      "Interactive reservation management and date picker",
-      "Simulated payment integration flow and receipt generation",
+      "Allows users to browse accommodation listings with amenities and details",
+      "Provides comprehensive account and profile management functionality",
+      "Supports online reservations and booking requests",
+      "Integrates PayPal API for seamless online payment processing",
+      "Uses Firebase authentication for secure user accounts and session persistence",
     ],
-    github: "https://github.com/alexmorgan/stayease-app",
-    demo: "https://stayease-demo.example.com",
+    github: "https://github.com/gellieascanodelacruz-rgb",
+    demo: "#contact",
     caseStudy: {
       overview:
-        "StayEase demonstrates real-time cloud database synchronization and responsive UI design tailored for mobile-first students seeking dormitory and apartment rentals.",
+        "LODGR is an accommodation marketplace concept built with modern ReactJS and Firebase. It demonstrates real-time user authentication and third-party payment gateway integration.",
       architecture: [
-        "Frontend: React.js leveraging modern hooks for state management and responsive CSS grid.",
-        "Backend as a Service: Firebase Auth for instant secure OAuth sign-in.",
-        "Database: Cloud Firestore with reactive snapshots for instant UI updates.",
+        "Frontend: ReactJS with modular component architecture and mobile-friendly responsive layout.",
+        "Authentication & Cloud: Firebase Auth for secure user identity management.",
+        "Payment Processing: Integrated PayPal API SDK for handling checkout flows and order confirmations.",
       ],
       databaseHighlights:
-        "Utilized Firestore collections for 'accommodations', 'users', and 'reservations' with security rules ensuring users only modify their own booking data.",
+        "Configured secure user collections and booking records synchronized with Firebase cloud services.",
       challengesAndLearnings:
-        "Working with NoSQL documents taught me how to structure denormalized data effectively to minimize read costs and achieve instant filter responses.",
+        "Handling asynchronous payment capture and confirming order states via PayPal API strengthened my integration and API communication skills.",
       keyMetrics: [
-        { label: "Database", val: "Cloud Firestore" },
-        { label: "Auth Flow", val: "Google OAuth" },
-        { label: "Layout", val: "Mobile-First" },
+        { label: "Payments", val: "PayPal API" },
+        { label: "Auth Flow", val: "Firebase Auth" },
+        { label: "Frontend", val: "ReactJS" },
       ],
     },
   },
   {
-    id: "pharmacart",
-    title: "PharmaCart",
-    tagline: "Web-based Pharmacy Catalog & Prescription Ordering System",
-    category: "Pharmacy E-Commerce System",
-    badge: "Web Systems Coursework Project",
+    id: "sellsmart",
+    title: "SellSmart",
+    tagline: "Retail Point-of-Sale System",
+    category: "Desktop Application / POS",
+    badge: "Desktop Application",
     summary:
-      "A web-based pharmacy ordering platform designed to manage products, customer orders, prescriptions, and delivery information.",
+      "A desktop-based point-of-sale system designed to help retail stores manage products, sales, and transaction records.",
     problem:
-      "Community pharmacies during busy periods struggle to process prescription verification and manage inventory without long queues or order errors.",
+      "Small retail stores frequently face inventory discrepancies, slow checkout tallying, and unorganized manual paper receipts.",
     solution:
-      "Built a full-featured PHP/MySQL e-commerce platform allowing customers to securely upload prescription photos, browse categorized medicines, apply discount vouchers, and track delivery progress.",
-    technologies: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
-    role: "Backend & Database Developer (PHP MVC, Relational DB & Cart Logic)",
+      "Engineered an efficient Java desktop application with a MySQL database backend that automates inventory product management, checkout calculations, and sales logging.",
+    technologies: ["Java", "MySQL", "Desktop Application", "SQL"],
+    role: "Software Developer",
     features: [
-      "Comprehensive product catalog with categorized medicines",
-      "Interactive shopping cart with quantity management",
-      "Secure prescription upload verification workflow",
-      "Multi-step checkout with delivery address capture",
-      "Admin order management with status updates",
-      "Discount voucher and promo code calculation system",
-      "Real-time delivery milestone tracking interface",
+      "Manages product information, categories, and unit pricing",
+      "Records sales transactions with fast tallying and checkout calculation",
+      "Organizes transaction records and sales history for easy auditing",
+      "Supports day-to-day retail store operations reliably",
     ],
-    github: "https://github.com/alexmorgan/pharmacart-ecommerce",
-    demo: "https://pharmacart-demo.example.com",
+    github: "https://github.com/gellieascanodelacruz-rgb",
+    demo: "#contact",
     caseStudy: {
       overview:
-        "PharmaCart was built to demonstrate classic server-rendered web engineering, session management, sanitized input processing, and relational database integrity in an e-commerce context.",
+        "SellSmart is an automated desktop POS software engineered in Java and MySQL. It equips retail operators with fast product lookup and instant transaction logging.",
       architecture: [
-        "Server Logic: PHP 8 with modular procedural / MVC separation.",
-        "Database: MySQL with InnoDB engine enforcing foreign key relationships and transactions.",
-        "Client: Vanilla JavaScript for dynamic cart interactions and form validation.",
+        "Application Layer: Java desktop application with structured modular architecture.",
+        "Data Layer: MySQL relational database accessed via JDBC with parameterized SQL queries for security.",
+        "Transaction Management: ACID-compliant transaction records ensuring reliable sales auditing.",
       ],
       databaseHighlights:
-        "Structured tables: products, categories, orders, order_items, prescriptions, vouchers, and customers.",
+        "Designed normalized product, transaction, and itemized sales tables with relational keys.",
       challengesAndLearnings:
-        "Learned how to handle file uploads securely (MIME validation, size limits, hashed filenames) and how to handle inventory decrementing within SQL transactions.",
+        "Connecting Java desktop clients to MySQL via JDBC taught me robust exception handling and database connection management.",
       keyMetrics: [
-        { label: "Core Stack", val: "PHP 8 & MySQL" },
-        { label: "Cart State", val: "PHP Sessions" },
-        { label: "Validation", val: "Server & Client" },
+        { label: "Platform", val: "Java Desktop" },
+        { label: "Database", val: "MySQL / JDBC" },
+        { label: "Function", val: "POS & Inventory" },
       ],
     },
   },
@@ -261,199 +274,78 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    id: "exp-1",
-    role: "Student Software Developer",
-    organization: "Academic Project Team",
-    period: "2025 – 2026",
-    type: "Academic Team Project",
-    isDummy: true,
+    id: "exp-academic",
+    role: "Student Developer — Academic Projects",
+    organization: "Bulacan State University – Bustos Campus",
+    period: "2023 – Present",
+    type: "Academic Software Development",
     description:
-      "Worked collaboratively on web-based academic projects involving frontend development, database design, system functionality, and documentation.",
+      "Developed web, desktop, and system-based applications as part of academic projects, gaining hands-on experience in software development, database management, API integration, and application design.",
     responsibilities: [
-      "Collaborated with a 4-member student team using Git/GitHub for branching and pull requests.",
-      "Designed responsive user interfaces using modern CSS and React components.",
-      "Participated in database normalization exercises (1NF to 3NF) for academic project databases.",
-      "Prepared technical documentation, system flowcharts, and user guides for capstone presentations.",
+      "Architected and implemented full-stack web and desktop applications (OSOADOCS, LODGR, SellSmart).",
+      "Designed and managed relational and cloud databases using PostgreSQL, MySQL, Supabase, and Firebase.",
+      "Integrated third-party REST APIs and payment gateways including PayPal API.",
+      "Applied software testing and version control practices utilizing Git, GitHub, Postman, and Selenium.",
     ],
-  },
-  {
-    id: "exp-2",
-    role: "Junior Web Development Intern",
-    organization: "Sample Technology Company",
-    period: "2026 (Sample Internship)",
-    type: "Simulated Internship / Practicum",
-    isDummy: true,
-    description:
-      "Assisted senior engineers with frontend styling updates, debugging client-side tickets, and writing clean HTML/CSS/JavaScript components.",
-    responsibilities: [
-      "Fixed UI responsiveness bugs across mobile and desktop breakpoints.",
-      "Tested and verified REST API endpoint responses using Postman.",
-      "Created reusable UI components following existing design guidelines.",
-      "Attended weekly standups and learned agile workflow fundamentals.",
-    ],
-  },
-];
-
-export const certificationsData = [
-  {
-    id: "cert-1",
-    title: "Web Development Fundamentals",
-    issuer: "Sample Learning Institute",
-    year: "2026",
-    badge: "Sample Certificate",
-    isDummy: true,
-    credentialId: "CERT-SAMPLE-2026-001",
-    skills: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    verificationUrl: "#cert-verify-sample",
-  },
-  {
-    id: "cert-2",
-    title: "Introduction to Cybersecurity",
-    issuer: "Sample Technology Academy",
-    year: "2025",
-    badge: "Sample Certificate",
-    isDummy: true,
-    credentialId: "CERT-SAMPLE-2025-042",
-    skills: ["Network Security Basics", "Safe Coding", "Threat Analysis"],
-    verificationUrl: "#cert-verify-sample",
-  },
-  {
-    id: "cert-3",
-    title: "Database Fundamentals",
-    issuer: "Sample Online Academy",
-    year: "2025",
-    badge: "Sample Certificate",
-    isDummy: true,
-    credentialId: "CERT-SAMPLE-2025-089",
-    skills: ["SQL Queries", "Relational Modeling", "Normalization"],
-    verificationUrl: "#cert-verify-sample",
   },
 ];
 
 export const educationData = {
   degree: "Bachelor of Science in Information Technology",
-  institution: "Sample State University",
+  major: "Major in Web and Mobile Application Development",
+  institution: "Bulacan State University – Bustos Campus",
   period: "2023 – Present",
   expectedGraduation: "Expected Graduation: 2027",
-  status: "3rd Year Undergraduate",
-  isDummy: true,
+  status: "4th Year Undergraduate Student",
   description:
-    "Pursuing a comprehensive curriculum in Information Technology focused on software development, systems analysis, database management, and emerging web technologies.",
-  coursework: [
-    { name: "Web Development", code: "IT-301", highlight: true },
-    { name: "Database Management", code: "IT-204", highlight: true },
-    { name: "System Administration", code: "IT-312" },
-    { name: "Cybersecurity Basics", code: "IT-320" },
-    { name: "Programming Fundamentals", code: "IT-101" },
-    { name: "Software Engineering", code: "IT-305", highlight: true },
-    { name: "Data Structures & Algorithms", code: "IT-201" },
-    { name: "Networking Fundamentals", code: "IT-208" },
-  ],
+    "Pursuing a Bachelor of Science in Information Technology majoring in Web and Mobile Application Development. Dedicated to creating functional, user-friendly, and practical software solutions.",
 };
 
 export const achievementsData = [
   {
-    id: "ach-1",
-    title: "Academic Excellence Award",
-    issuer: "College of Information Technology",
-    year: "2025 – 2026",
-    isDummy: true,
+    id: "ach-deans-list",
+    title: "Dean's Lister",
+    issuer: "Bulacan State University – Bustos Campus",
+    period: "Academic Excellence",
     description:
-      "Recognized on the Dean's Honor List for maintaining high academic standing in major technical coursework.",
-  },
-  {
-    id: "ach-2",
-    title: "Best Web Application Project",
-    issuer: "University IT Showcase",
-    year: "2025",
-    isDummy: true,
-    description:
-      "Awarded Best Project in Web Systems course for developing the DocuFlow document management system prototype.",
-  },
-  {
-    id: "ach-3",
-    title: "Finalist — University Hackathon",
-    issuer: "Campus Developer Society",
-    year: "2025",
-    isDummy: true,
-    description:
-      "Built a prototype campus navigation tool with a student team in a 24-hour university coding competition.",
-  },
-  {
-    id: "ach-4",
-    title: "Outstanding Project Presentation",
-    issuer: "Department Capstone Colloquium",
-    year: "2024",
-    isDummy: true,
-    description:
-      "Commended for clear technical communication, architectural diagrams, and live system demonstration.",
-  },
-];
-
-export const organizationsData = [
-  {
-    id: "org-1",
-    name: "University Computing Society",
-    role: "Technical Committee Member",
-    period: "2024 – Present",
-    isDummy: true,
-    description:
-      "Assisted in coordinating technical workshops, coding bootcamps, and peer tutoring sessions for junior IT students.",
-  },
-  {
-    id: "org-2",
-    name: "Cybersecurity Awareness Workshop",
-    role: "Participant & Student Volunteer",
-    period: "2025",
-    isDummy: true,
-    description:
-      "Participated in hands-on lab sessions covering phishing prevention, password security, and basic vulnerability testing.",
-  },
-  {
-    id: "org-3",
-    name: "University Web Development Competition",
-    role: "Project Team Member",
-    period: "2025",
-    isDummy: true,
-    description:
-      "Collaborated on designing and presenting interactive web solutions addressing campus student life challenges.",
+      "Recognized for maintaining high scholastic standing and demonstrating excellence in Information Technology and Web & Mobile Application Development coursework.",
   },
 ];
 
 export const resumeData = {
-  title: "Alex Morgan - Curriculum Vitae",
-  version: "Student Edition (Placeholder)",
+  title: "Gellie Anne Dela Cruz - Resume",
+  version: "Full-Stack Web Developer",
   summary:
-    "Motivated 3rd Year Information Technology student seeking an internship / OJT position in software development or web engineering. Eager to contribute hands-on skills in JavaScript, React, PHP, and SQL while learning in a collaborative professional environment.",
+    "Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. Passionate about turning ideas into functional, user-friendly, and practical web applications. Experienced in front-end and back-end development, database management, API integration, and developing web, desktop, and system projects. Open to OJT / Internship starting November 16, 2026.",
   sections: [
     {
       title: "Education",
       items: [
-        "Bachelor of Science in Information Technology (Sample State University, 2023 – Present, Exp. 2027)",
+        "Bachelor of Science in Information Technology — Major in Web and Mobile Application Development (Bulacan State University – Bustos Campus, 2023 – Present, Expected Grad: 2027)",
       ],
     },
     {
-      title: "Core Technical Skills",
+      title: "Technical Skills",
       items: [
-        "Languages: JavaScript (ES6+), Python, PHP, HTML5, CSS3, SQL",
-        "Frameworks & Tools: React.js, Node.js, Tailwind CSS, Git/GitHub, VS Code, Figma",
-        "Databases: MySQL, Firebase, Cloud Firestore",
+        "Frontend: ReactJS, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, React Native, Responsive Web Design",
+        "Backend: Node.js, PHP, Django, Java",
+        "Databases & Cloud: PostgreSQL, MySQL, SQL, Supabase, Firebase",
+        "APIs & Integration: REST APIs, API Integration, PayPal API",
+        "Tools & Workflows: Git, GitHub, Visual Studio Code, Postman, XAMPP, Apache NetBeans, Selenium, Figma",
       ],
     },
     {
-      title: "Key Projects",
+      title: "Featured Projects",
       items: [
-        "DocuFlow (React, Node.js, MySQL): Role-based document workflow platform",
-        "StayEase (React, Firebase): Accommodation booking application prototype",
-        "PharmaCart (PHP, MySQL): Pharmacy e-commerce and prescription verification system",
+        "OSOADOCS: Centralized Document Workflow and Management System (ReactJS, SQL, REST APIs)",
+        "LODGR: Accommodation & Hosting Services Web Application (ReactJS, Firebase, PayPal API)",
+        "SellSmart: Retail Point-of-Sale Desktop System (Java, MySQL)",
       ],
     },
     {
-      title: "Certifications & Training (Sample)",
+      title: "Honors & Achievements",
       items: [
-        "Web Development Fundamentals (Sample Learning Institute, 2026)",
-        "Database Fundamentals (Sample Online Academy, 2025)",
-        "Introduction to Cybersecurity (Sample Technology Academy, 2025)",
+        "Dean's Lister — Bulacan State University – Bustos Campus",
       ],
     },
   ],

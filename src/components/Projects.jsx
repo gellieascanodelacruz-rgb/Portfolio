@@ -118,7 +118,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-secondary btn-sm"
-                    title="Live Demo Preview (Dummy Link)"
+                    title="Live Demo Preview"
                   >
                     <Icon name="ExternalLink" size={16} />
                     <span>Live Demo</span>
@@ -129,7 +129,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline btn-sm"
-                    title="GitHub Repository (Dummy Link)"
+                    title="GitHub Repository"
                   >
                     <Icon name="Github" size={16} />
                     <span>GitHub</span>

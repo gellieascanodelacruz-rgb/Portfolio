@@ -11,13 +11,10 @@ export default function Experience() {
             <Icon name="Briefcase" size={14} />
             Experience
           </span>
-          <h2 className="section-title">Academic & Practicum Experience</h2>
+          <h2 className="section-title">Academic & Project Experience</h2>
           <p className="section-subtitle">
-            Hands-on collaborative projects, simulated team workflows, and student practicum exposure.
+            Hands-on software development, database architecture, and API integration in academic projects.
           </p>
-          <div style={{ marginTop: "0.75rem" }}>
-            <span className="sample-badge">Note: All entries below are Sample / Dummy Data</span>
-          </div>
         </div>
 
         <div className="timeline">
@@ -33,7 +30,6 @@ export default function Experience() {
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
                     <span className="timeline-period-badge">{item.period}</span>
-                    <span className="sample-badge">Sample Data</span>
                   </div>
                 </div>
 

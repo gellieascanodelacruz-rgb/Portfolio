@@ -11,21 +11,20 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
-          {/* Brand & Disclaimer */}
+          {/* Brand */}
           <div className="footer-brand-col">
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
-              <div className="brand-badge">AM</div>
+              <div className="brand-badge">GD</div>
               <span style={{ fontSize: "1.125rem", fontWeight: 700, color: "var(--text-primary)" }}>
                 {personalInfo.name}
               </span>
             </div>
             <p style={{ color: "var(--text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>
-              Undergraduate Information Technology Student Portfolio. Designed with React and modular Vanilla CSS.
+              {personalInfo.title} · Bulacan State University – Bustos Campus.
             </p>
-
-            <div className="footer-disclaimer-box">
-              <strong>Sample Data Notice:</strong> All names, project details, affiliations, and certificates displayed on this website are mock/dummy placeholders for student presentation.
-            </div>
+            <p style={{ color: "#fda4af", fontSize: "0.8125rem", marginTop: "0.5rem", fontFamily: "var(--font-mono)" }}>
+              {personalInfo.status}
+            </p>
           </div>
 
           {/* Quick Navigation Links */}
@@ -39,9 +38,8 @@ export default function Footer() {
             </div>
 
             <div className="footer-nav-list">
-              <h4>Credentials</h4>
+              <h4>Academic</h4>
               <a href="#experience">Experience</a>
-              <a href="#certifications">Certifications</a>
               <a href="#education">Education</a>
               <a href="#achievements">Achievements</a>
             </div>
@@ -50,15 +48,15 @@ export default function Footer() {
               <h4>Connect</h4>
               <a href="#resume">Resume</a>
               <a href="#contact">Contact Form</a>
-              <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">GitHub (Dummy)</a>
-              <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn (Dummy)</a>
+              <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
         </div>
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} {personalInfo.name}. All mock portfolio content is for demonstration purposes.</p>
+          <p>© {new Date().getFullYear()} {personalInfo.name}. Built with React & modern CSS.</p>
 
           <button
             onClick={scrollToTop}

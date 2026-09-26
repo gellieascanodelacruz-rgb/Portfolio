@@ -56,23 +56,23 @@ export default function Contact() {
         </div>
 
         <div className="contact-grid">
-          {/* Left Column: Direct Dummy Contact Info */}
+          {/* Left Column: Direct Contact Info */}
           <div className="contact-info-panel">
             <p className="contact-intro-text">
-              I am actively looking for internship and OJT positions in software development, web development, and database systems. You can reach me through the sample channels below.
+              I am actively looking for internship and OJT positions in software development, web development, and database systems. You can reach me directly through any of the channels below.
             </p>
 
             <div className="contact-cards-stack">
               <a
                 href={`mailto:${personalInfo.email}`}
                 className="contact-card-item"
-                title="Send an email (Dummy email)"
+                title={`Send an email to ${personalInfo.email}`}
               >
                 <div className="contact-card-icon">
                   <Icon name="Mail" size={20} />
                 </div>
                 <div className="contact-card-text">
-                  <span className="contact-card-label">Email Address (Dummy)</span>
+                  <span className="contact-card-label">Email Address</span>
                   <span className="contact-card-val">{personalInfo.email}</span>
                 </div>
               </a>
@@ -82,14 +82,14 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-card-item"
-                title="LinkedIn profile (Dummy Link)"
+                title="View LinkedIn Profile"
               >
                 <div className="contact-card-icon">
                   <Icon name="Linkedin" size={20} />
                 </div>
                 <div className="contact-card-text">
-                  <span className="contact-card-label">LinkedIn (Dummy Profile)</span>
-                  <span className="contact-card-val">linkedin.com/in/alexmorgan</span>
+                  <span className="contact-card-label">LinkedIn</span>
+                  <span className="contact-card-val">{personalInfo.linkedin.replace(/^https?:\/\//, "")}</span>
                 </div>
               </a>
 
@@ -98,14 +98,14 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-card-item"
-                title="GitHub profile (Dummy Link)"
+                title="View GitHub Profile"
               >
                 <div className="contact-card-icon">
                   <Icon name="Github" size={20} />
                 </div>
                 <div className="contact-card-text">
-                  <span className="contact-card-label">GitHub (Dummy Profile)</span>
-                  <span className="contact-card-val">github.com/alexmorgan</span>
+                  <span className="contact-card-label">GitHub</span>
+                  <span className="contact-card-val">{personalInfo.github.replace(/^https?:\/\//, "")}</span>
                 </div>
               </a>
 
@@ -144,7 +144,7 @@ export default function Contact() {
                   <div>
                     <strong style={{ fontSize: "1.05rem" }}>Message Sent Successfully!</strong>
                     <p style={{ fontSize: "0.85rem", marginTop: "0.25rem", color: "#a7f3d0" }}>
-                      Thank you for reaching out. (This is a simulated form submission for student portfolio demonstration.)
+                      Thank you for reaching out! I will review your message and get back to you soon.
                     </p>
                   </div>
                 </div>
