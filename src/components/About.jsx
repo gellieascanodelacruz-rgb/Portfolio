@@ -20,15 +20,15 @@ export default function About() {
           </svg>
 
           <span className="dashed-callout-badge">
-            BEFORE YOU SCROLL ANY FURTHER
+            BACKGROUND & OBJECTIVE
           </span>
 
           <h3 className="dashed-callout-title">
-            Want to Hire a Dedicated OJT / Intern for November 2026?
+            Passionate About Building Clean, Functional Web Solutions
           </h3>
 
           <p className="dashed-callout-text">
-            I am actively seeking on-the-job training opportunities in software engineering, full-stack web development, and database systems starting November 16, 2026.
+            I craft thoughtful web applications with clean code, intuitive user interfaces, and robust database architectures. Open to software development opportunities and collaborative projects.
           </p>
 
           <a

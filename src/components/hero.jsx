@@ -8,7 +8,7 @@ export default function Hero() {
     "FULL-STACK DEVELOPER",
     "BSIT 4TH YEAR",
     "BULSU BUSTOS",
-    "OPEN TO OJT NOV 2026",
+    "SOFTWARE SOLUTIONS",
     "DEAN'S LISTER",
     "WEB & MOBILE APP DEV",
     "REACT & NODE.JS",
@@ -40,10 +40,6 @@ export default function Hero() {
                   alt={personalInfo.name}
                   className="hero-photo-img"
                 />
-                <div className="portrait-floating-tag">
-                  <span className="pulse-dot" />
-                  <span>Open to OJT • Nov 16, 2026</span>
-                </div>
               </div>
             </div>
 

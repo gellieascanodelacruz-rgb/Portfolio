@@ -97,68 +97,24 @@ body {
    ========================================================================== */
 
 .editorial-site-wrapper {
-  display: flex;
+  display: block;
   min-height: 100vh;
   width: 100%;
-  background-color: var(--theme-dark-blue);
+  background-color: var(--theme-canvas-cream);
   position: relative;
 }
 
 .editorial-margin {
-  display: none;
-  width: var(--frame-margin-width);
-  min-width: var(--frame-margin-width);
-  background-color: var(--theme-dark-blue);
-  color: #ffffff;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  z-index: 40;
-  overflow: hidden;
-  user-select: none;
-}
-
-@media (min-width: 1080px) {
-  .editorial-margin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.editorial-margin.margin-left {
-  border-right: 2px solid var(--theme-dark-red);
-}
-
-.editorial-margin.margin-right {
-  border-left: 2px solid var(--theme-dark-red);
-}
-
-.margin-track {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.9);
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.margin-track .star {
-  color: #f87171;
+  display: none !important;
 }
 
 .editorial-canvas {
-  flex: 1;
+  width: 100%;
   min-width: 0;
   background-color: var(--theme-canvas-cream);
   color: var(--theme-text-body);
   position: relative;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+  box-shadow: none;
 }
 
 /* Container */
@@ -1021,8 +977,22 @@ a {
   border-radius: var(--radius-xs);
 }
 
-.project-pod-btn {
+.project-pod-actions {
+  display: flex;
+  gap: 0.65rem;
   width: 100%;
+  margin-top: auto;
+}
+
+.project-pod-actions .project-pod-btn {
+  flex: 1;
+  padding: 0.65rem 0.5rem;
+  font-size: 0.8125rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -1529,16 +1499,26 @@ a {
   flex-shrink: 0;
 }
 
+.contact-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  flex: 1;
+}
+
 .contact-card-label {
+  display: block;
   font-size: 0.71875rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--theme-text-muted);
-  margin-bottom: 0.2rem;
+  color: var(--theme-dark-red);
+  margin-bottom: 0.25rem;
 }
 
 .contact-card-val {
+  display: block;
   font-family: var(--font-sans);
   font-size: 0.9375rem;
   font-weight: 700;

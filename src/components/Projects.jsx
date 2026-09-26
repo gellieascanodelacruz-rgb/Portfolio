@@ -82,14 +82,28 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Pill Action Button */}
-                <button
-                  type="button"
-                  onClick={() => setSelectedProject(project)}
-                  className={`btn project-pod-btn ${idx === 1 ? "btn-secondary" : "btn-primary"}`}
-                >
-                  <span>Explore Project</span>
-                </button>
+                {/* Action Buttons Row */}
+                <div className="project-pod-actions">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedProject(project)}
+                    className="btn project-pod-btn btn-primary"
+                  >
+                    <span>Case Study</span>
+                  </button>
+                  {project.demo && project.demo.startsWith("http") && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn project-pod-btn btn-secondary"
+                      title={`Visit ${project.title} live website`}
+                    >
+                      <Icon name="ExternalLink" size={14} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
+                </div>
               </article>
             ))}
           </div>

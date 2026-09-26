@@ -51,7 +51,7 @@ export default function Contact() {
           </span>
           <h2 className="section-title">Contact Information</h2>
           <p className="section-subtitle">
-            Interested in discussing an internship, OJT opportunity, or student project? Feel free to reach out.
+            Interested in discussing software development, collaboration, or potential opportunities? Feel free to reach out.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function Contact() {
           {/* Left Column: Direct Contact Info */}
           <div className="contact-info-panel">
             <p className="contact-intro-text">
-              I am actively looking for internship and OJT positions in software development, web development, and database systems. You can reach me directly through any of the channels below.
+              I am open to software development opportunities, web applications, and database system projects. You can reach me directly through any of the channels below.
             </p>
 
             <div className="contact-cards-stack">
@@ -216,7 +216,7 @@ export default function Contact() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="e.g. OJT / Internship Inquiry"
+                    placeholder="e.g. Project Inquiry or Collaboration"
                     className="form-input"
                   />
                 </div>

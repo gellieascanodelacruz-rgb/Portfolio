@@ -8,7 +8,7 @@
 export const personalInfo = {
   name: "Gellie Anne Dela Cruz",
   title: "Full-Stack Web Developer",
-  status: "Open to OJT / Internship — Starting November 16, 2026",
+  status: "Full-Stack Web Developer — BulSU Bustos",
   location: "Baliuag City, Bulacan, Philippines",
   shortBio:
     "Full-Stack Web Developer focused on building functional, user-friendly, and practical web applications.",
@@ -34,12 +34,12 @@ export const personalInfo = {
       icon: "Code",
     },
     {
-      id: "card-availability",
-      label: "OJT / Practicum",
-      value: "Open Starting Nov 16, 2026",
-      subtext: "Academic Internship Placement",
-      icon: "CheckCircle",
-      highlight: true,
+      id: "card-focus",
+      label: "Technical Focus",
+      value: "Full-Stack & Systems",
+      subtext: "Web & Mobile Application Development",
+      icon: "Layers",
+      highlight: false,
     },
     {
       id: "card-location",
@@ -167,7 +167,7 @@ export const projectsData = [
       "Designed to improve document accessibility and organizational efficiency",
     ],
     github: "https://github.com/gellieascanodelacruz-rgb",
-    demo: "#contact",
+    demo: "https://www.osoadocs.website/",
     caseStudy: {
       overview:
         "OSOADOCS was designed to eliminate paperwork bottlenecks in student organizations. It centralizes all official records into a clean digital workflow with end-to-end tracking.",
@@ -209,7 +209,7 @@ export const projectsData = [
       "Uses Firebase authentication for secure user accounts and session persistence",
     ],
     github: "https://github.com/gellieascanodelacruz-rgb",
-    demo: "#contact",
+    demo: "https://lodgrs.vercel.app",
     caseStudy: {
       overview:
         "LODGR is an accommodation marketplace concept built with modern ReactJS and Firebase. It demonstrates real-time user authentication and third-party payment gateway integration.",
@@ -316,7 +316,7 @@ export const resumeData = {
   title: "Gellie Anne Dela Cruz - Resume",
   version: "Full-Stack Web Developer",
   summary:
-    "Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. Passionate about turning ideas into functional, user-friendly, and practical web applications. Experienced in front-end and back-end development, database management, API integration, and developing web, desktop, and system projects. Open to OJT / Internship starting November 16, 2026.",
+    "Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. Passionate about turning ideas into functional, user-friendly, and practical web applications. Experienced in front-end and back-end development, database management, API integration, and developing web, desktop, and system projects.",
   sections: [
     {
       title: "Education",
