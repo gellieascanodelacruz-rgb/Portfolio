@@ -8,9 +8,9 @@ export default function Hero() {
     "FULL-STACK DEVELOPER",
     "BSIT 4TH YEAR",
     "UI/UX & WEB DESIGN",
-    "SOFTWARE SOLUTIONS",
+    "CLEAN ARCHITECTURE",
     "DEAN'S LISTER",
-    "WEB & MOBILE APP DEV",
+    "WEB & MOBILE APPS",
     "REACT & NODE.JS",
     "POSTGRESQL & MYSQL",
     "PRACTICAL WEB SOLUTIONS",
@@ -46,8 +46,7 @@ export default function Hero() {
             {/* Right Details Pane (No Card Wrapper) */}
             <div className="hero-details-pane">
 
-              {/* Editorial Kicker & Headline */}
-              <p className="hero-details-kicker">a dedicated full-stack developer</p>
+              {/* Editorial Headline */}
               <h2 className="hero-details-headline">
                 Functional Web Applications & Thoughtful Systems
               </h2>

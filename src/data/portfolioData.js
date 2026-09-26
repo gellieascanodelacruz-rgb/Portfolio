@@ -2,7 +2,7 @@
  * GELLIE ANNE DELA CRUZ - PORTFOLIO DATA
  * Bachelor of Science in Information Technology
  * Major in Web and Mobile Application Development
- * Bulacan State University – Bustos Campus
+ * Bulacan State University
  */
 
 import osoadocsLogin from "../assets/images/OSOADOCS/LOGIN OSOADOCS.png";
@@ -29,21 +29,21 @@ export const personalInfo = {
       id: "card-status",
       label: "Current Status",
       value: "4th Year BSIT Student",
-      subtext: "Bulacan State University – Bustos Campus",
+      subtext: "Bulacan State University",
       icon: "GraduationCap",
     },
     {
       id: "card-field",
       label: "Major & Specialization",
       value: "Web & Mobile App Dev",
-      subtext: "Full-Stack & System Projects",
+      subtext: "Frontend & UI Design",
       icon: "Code",
     },
     {
       id: "card-focus",
       label: "Technical Focus",
       value: "Full-Stack & Systems",
-      subtext: "Web & Mobile Application Development",
+      subtext: "Databases, APIs & Backend Logic",
       icon: "Layers",
       highlight: false,
     },
@@ -295,7 +295,7 @@ export const experienceData = [
   {
     id: "exp-academic",
     role: "Student Developer — Academic Projects",
-    organization: "Bulacan State University – Bustos Campus",
+    organization: "Bulacan State University",
     period: "2023 – Present",
     type: "Academic Software Development",
     description:
@@ -312,7 +312,7 @@ export const experienceData = [
 export const educationData = {
   degree: "Bachelor of Science in Information Technology",
   major: "Major in Web and Mobile Application Development",
-  institution: "Bulacan State University – Bustos Campus",
+  institution: "Bulacan State University",
   period: "2023 – Present",
   expectedGraduation: "Expected Graduation: 2027",
   status: "4th Year Undergraduate Student",
@@ -324,7 +324,7 @@ export const achievementsData = [
   {
     id: "ach-deans-list",
     title: "Dean's Lister",
-    issuer: "Bulacan State University – Bustos Campus",
+    issuer: "Bulacan State University",
     period: "Academic Excellence",
     description:
       "Recognized for maintaining high scholastic standing and demonstrating excellence in Information Technology and Web & Mobile Application Development coursework.",
@@ -335,12 +335,12 @@ export const resumeData = {
   title: "Gellie Anne Dela Cruz - Resume",
   version: "Full-Stack Web Developer",
   summary:
-    "Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. Passionate about turning ideas into functional, user-friendly, and practical web applications. Experienced in front-end and back-end development, database management, API integration, and developing web, desktop, and system projects.",
+    "Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University. Passionate about turning ideas into functional, user-friendly, and practical web applications. Experienced in front-end and back-end development, database management, API integration, and developing web, desktop, and system projects.",
   sections: [
     {
       title: "Education",
       items: [
-        "Bachelor of Science in Information Technology — Major in Web and Mobile Application Development (Bulacan State University – Bustos Campus, 2023 – Present, Expected Grad: 2027)",
+        "Bachelor of Science in Information Technology — Major in Web and Mobile Application Development (Bulacan State University, 2023 – Present, Expected Grad: 2027)",
       ],
     },
     {
@@ -364,7 +364,7 @@ export const resumeData = {
     {
       title: "Honors & Achievements",
       items: [
-        "Dean's Lister — Bulacan State University – Bustos Campus",
+        "Dean's Lister — Bulacan State University",
       ],
     },
   ],
