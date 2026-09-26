@@ -524,50 +524,51 @@ a {
   margin-top: 0.75rem;
 }
 
-/* Split Hero Showcase (Clean White Card on Cream Canvas) */
-.hero-split-box {
+/* Full Open Hero Layout (No Card Box, Full Open Section on Canvas) */
+.hero-open-layout {
   display: grid;
   grid-template-columns: 1fr;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  box-shadow: var(--shadow-warm-lg);
-  border: 1px solid var(--theme-border-card);
-  background-color: var(--theme-card-white);
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 @media (min-width: 940px) {
-  .hero-split-box {
-    grid-template-columns: 1.05fr 1.25fr;
+  .hero-open-layout {
+    grid-template-columns: 420px 1fr;
+    gap: 4rem;
+    align-items: center;
   }
 }
 
-/* Left Pane: FULL SIZE PROFILE PORTRAIT (NO CROPPING) */
+/* Left Pane: Natural Full Size Portrait (No Box / No Card) */
 .hero-photo-pane {
-  background: radial-gradient(circle at center, #630914 0%, #46050e 65%, #2a0207 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2.5rem 2rem;
   position: relative;
+  background: transparent;
+  padding: 0;
 }
 
 .hero-photo-frame {
   width: 100%;
-  max-width: 440px;
+  max-width: 400px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Full Size Profile Image with natural aspect ratio and zero cropping */
+/* Full Size Profile Image sitting naturally on cream canvas */
 .hero-photo-img {
   width: 100%;
   height: auto;
-  max-height: 500px;
+  max-height: 460px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 16px 32px rgba(12, 24, 54, 0.16));
   transition: transform var(--transition-normal);
 }
 
@@ -575,24 +576,25 @@ a {
   transform: scale(1.02);
 }
 
-/* Floating Status Pill on Portrait */
+/* Floating Status Pill beneath Portrait */
 .portrait-floating-tag {
   position: absolute;
   bottom: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(12, 24, 54, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--theme-dark-blue);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  padding: 0.4rem 1.1rem;
+  padding: 0.45rem 1.25rem;
   border-radius: var(--radius-pill);
-  font-size: 0.75rem;
+  font-size: 0.78125rem;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.55rem;
   white-space: nowrap;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(12, 24, 54, 0.25);
+  z-index: 2;
 }
 
 .pulse-dot {
@@ -603,47 +605,20 @@ a {
   box-shadow: 0 0 10px var(--theme-emerald);
 }
 
-/* Right Details Pane: Clean White with Dark Navy & Dark Red Accents */
+/* Right Details Pane: Open Typography & CTA directly on canvas */
 .hero-details-pane {
-  background-color: var(--theme-card-white);
-  padding: 3rem 2.25rem;
+  background: transparent;
+  padding: 0;
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  border-left: 1px solid var(--theme-border-subtle);
 }
 
 @media (min-width: 768px) {
   .hero-details-pane {
-    padding: 3.5rem 3rem;
-  }
-}
-
-/* Rotating Stamp Badge (Top Right) */
-.stamp-badge-wrapper {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 90px;
-  height: 90px;
-  z-index: 5;
-  user-select: none;
-}
-
-.stamp-badge-svg {
-  width: 100%;
-  height: 100%;
-  animation: spinSlow 30s linear infinite;
-  transform-origin: center center;
-}
-
-@keyframes spinSlow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    padding: 0;
   }
 }
 
