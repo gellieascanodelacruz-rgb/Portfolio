@@ -6,138 +6,93 @@ import ProjectModal from "./ProjectModal";
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  return (
-    <section id="projects" className="section section-alt">
-      <div className="container">
-        <div className="section-header">
-          <span className="section-tag">
-            <Icon name="Layers" size={14} />
-            Featured Work
-          </span>
-          <h2 className="section-title">Academic & Personal Projects</h2>
-          <p className="section-subtitle">
-            Hands-on web applications developed to solve real workflow problems, demonstrate full-stack logic, and showcase clean database design.
-          </p>
+  // Custom cute doodle SVGs for the 3 featured cards
+  const getDoodleIcon = (index) => {
+    if (index === 0) {
+      // Document / Workflow doodle (coral)
+      return (
+        <div className="project-pod-icon-box coral">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
         </div>
+      );
+    } else if (index === 1) {
+      // Accommodation / House doodle (blue)
+      return (
+        <div className="project-pod-icon-box blue">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </div>
+      );
+    } else {
+      // Store / POS Cart doodle (yellow)
+      return (
+        <div className="project-pod-icon-box yellow">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+        </div>
+      );
+    }
+  };
 
-        <div className="projects-grid">
-          {projectsData.map((project) => (
-            <article key={project.id} className="project-card">
-              {/* Left Column: Mockup & Category Info */}
-              <div className="project-preview-wrapper">
-                <div>
-                  <div className="project-badge-row">
-                    <span className="project-category-tag">{project.category}</span>
-                    <span className="project-academic-tag">{project.badge}</span>
-                  </div>
+  const getKickerText = (index) => {
+    if (index === 0) return "THE WORKFLOW SYSTEM";
+    if (index === 1) return "ACCOMMODATION & BOOKING";
+    return "DESKTOP POINT-OF-SALE";
+  };
 
-                  {/* Visual Interface Mockup Graphic */}
-                  <div className="project-mockup-graphic">
-                    <div className="mockup-header-bar">
-                      <span className="mockup-dot" />
-                      <span className="mockup-dot" />
-                      <span className="mockup-dot" />
-                      <span style={{ fontSize: "0.6875rem", fontFamily: "var(--font-mono)", color: "var(--text-muted)", marginLeft: "0.5rem" }}>
-                        app://{project.id}.local/dashboard
-                      </span>
-                    </div>
-                    <div className="mockup-body-wireframe">
-                      <div className="wireframe-line" style={{ width: "60%" }} />
-                      <div className="wireframe-line" style={{ width: "85%" }} />
-                      <div className="wireframe-boxes">
-                        <div className="wireframe-box" />
-                        <div className="wireframe-box" />
-                        <div className="wireframe-box" />
-                      </div>
-                      <div className="wireframe-line" style={{ width: "40%" }} />
-                    </div>
-                  </div>
-                </div>
+  return (
+    <section id="projects" className="section section-cream">
+      <div className="container">
+        {/* Buttercup Yellow Pod Container */}
+        <div className="projects-pod-container">
+          <div className="projects-pod-header">
+            <p className="projects-pod-kicker">FEATURED ACADEMIC SOFTWARE</p>
+            <h2 className="projects-pod-title">
+              LET'S BUILD PRACTICAL SOLUTIONS TOGETHER
+            </h2>
+          </div>
 
-                {/* Role Contribution */}
-                <div className="project-role-badge">
-                  <strong>My Role:</strong> {project.role}
-                </div>
-              </div>
+          {/* 3 Prominent White Pod Cards */}
+          <div className="projects-pod-grid">
+            {projectsData.map((project, idx) => (
+              <article key={project.id} className="project-pod-card">
+                {getDoodleIcon(idx)}
 
-              {/* Right Column: Project Details */}
-              <div className="project-details">
-                <div className="project-header">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-tagline">{project.tagline}</p>
-                </div>
+                <span className="project-pod-kicker">{getKickerText(idx)}</span>
+                <h3 className="project-pod-name">{project.title}</h3>
+                <p className="project-pod-desc">{project.summary || project.description}</p>
 
-                <p className="project-summary">{project.summary}</p>
-
-                {/* Problem & Solution Breakdown */}
-                <div className="problem-solution-box">
-                  <div className="ps-item">
-                    <span className="ps-label">The Problem:</span>
-                    <p className="ps-text">{project.problem}</p>
-                  </div>
-                  <div className="ps-item">
-                    <span className="ps-label">The Solution:</span>
-                    <p className="ps-text">{project.solution}</p>
-                  </div>
-                </div>
-
-                {/* Key Features */}
-                <div className="project-features-list">
-                  <div className="features-title">Key Implemented Features</div>
-                  <div className="features-grid">
-                    {project.features.map((feature, fIdx) => (
-                      <div key={fIdx} className="feature-point">
-                        <Icon name="CheckCircle" size={16} />
-                        <span>{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Technologies */}
-                <div className="project-tech-tags">
-                  {project.technologies.map((tech, tIdx) => (
-                    <span key={tIdx} className="tech-tag">
+                {/* Tech Pills */}
+                <div className="project-pod-tags">
+                  {(project.technologies || project.tags || []).map((tech) => (
+                    <span key={tech} className="project-pod-tag">
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                {/* Action Buttons */}
-                <div className="project-actions">
-                  <button
-                    className="btn btn-primary btn-sm"
-                    onClick={() => setSelectedProject(project)}
-                  >
-                    <Icon name="FileText" size={16} />
-                    <span>View Case Study</span>
-                  </button>
-
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-secondary btn-sm"
-                    title="Live Demo Preview"
-                  >
-                    <Icon name="ExternalLink" size={16} />
-                    <span>Live Demo</span>
-                  </a>
-
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline btn-sm"
-                    title="GitHub Repository"
-                  >
-                    <Icon name="Github" size={16} />
-                    <span>GitHub</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
+                {/* Pill Action Button */}
+                <button
+                  type="button"
+                  onClick={() => setSelectedProject(project)}
+                  className={`btn project-pod-btn ${idx === 1 ? "btn-secondary" : "btn-primary"}`}
+                >
+                  <span>Explore Project</span>
+                </button>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
 

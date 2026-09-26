@@ -4,129 +4,118 @@ import { Icon } from "./Icons";
 import ProfileImage from "../assets/images/profile.png";
 
 export default function Hero() {
+  const tickerItems = [
+    "FULL-STACK DEVELOPER",
+    "BSIT 4TH YEAR",
+    "BULSU BUSTOS",
+    "OPEN TO OJT NOV 2026",
+    "DEAN'S LISTER",
+    "WEB & MOBILE APP DEV",
+    "REACT & NODE.JS",
+    "POSTGRESQL & MYSQL",
+    "PRACTICAL WEB SOLUTIONS",
+  ];
+
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-bg-accent" />
-      <div className="hero-bg-accent-blue" />
-      <div className="container hero-grid">
-        {/* Left column: Emphasized Bio & Description */}
-        <div className="hero-content">
-          <div className="hero-status-pill">
-            <span className="pulse-dot" />
-            <span>{personalInfo.status}</span>
+    <>
+      <section id="home" className="hero-editorial-section">
+        <div className="container">
+          {/* Centered Retro Wordmark / Logo */}
+          <div className="retro-wordmark-container">
+            <h1 className="retro-wordmark">
+              <span>gellie anne</span>
+              <span>dela cruz</span>
+            </h1>
+            <p className="retro-wordmark-sub">
+              Full-Stack Web Developer ✱ Bulacan State University – Bustos Campus
+            </p>
           </div>
 
-          <h1 className="hero-name">{personalInfo.name}</h1>
-          <h2 className="hero-title">{personalInfo.title}</h2>
-
-          <div className="hero-desc-box">
-            <p className="hero-desc">{personalInfo.shortBio}</p>
-            <div className="hero-focus-tags">
-              <span className="focus-tag">
-                <Icon name="Code" size={13} />
-                <span>Web Development</span>
-              </span>
-              <span className="focus-tag">
-                <Icon name="Database" size={13} />
-                <span>Database Systems</span>
-              </span>
-              <span className="focus-tag">
-                <Icon name="Layers" size={13} />
-                <span>Full-Stack & APIs</span>
-              </span>
-            </div>
-          </div>
-
-          <div className="hero-cta-group">
-            <a href="#projects" className="btn btn-primary">
-              <Icon name="Layers" size={18} />
-              <span>View Projects</span>
-            </a>
-            <a
-              href="/Gellie Anne Dela Cruz_Resume.pdf"
-              download="Gellie Anne Dela Cruz_Resume.pdf"
-              className="btn btn-secondary"
-            >
-              <Icon name="Download" size={18} />
-              <span>Download Resume</span>
-            </a>
-            <a href="#contact" className="btn btn-outline">
-              <Icon name="Mail" size={18} />
-              <span>Contact Me</span>
-            </a>
-          </div>
-
-          <div className="hero-social-links">
-            <span className="hero-social-label">Connect:</span>
-            <a
-              href={personalInfo.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-icon"
-              aria-label="GitHub Profile"
-              title="GitHub Profile"
-            >
-              <Icon name="Github" size={18} />
-            </a>
-            <a
-              href={personalInfo.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-icon"
-              aria-label="LinkedIn Profile"
-              title="LinkedIn Profile"
-            >
-              <Icon name="Linkedin" size={18} />
-            </a>
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="btn btn-icon"
-              aria-label={`Email ${personalInfo.name}`}
-              title="Send an Email"
-            >
-              <Icon name="Mail" size={18} />
-            </a>
-          </div>
-        </div>
-
-        {/* Right column: Prominently Emphasized Profile Portrait */}
-        <div className="hero-visual">
-          <div className="hero-portrait-showcase">
-            {/* Ambient ambient glow aura */}
-            <div className="portrait-glow-halo" />
-
-            {/* The Main Prominent Portrait */}
-            <div className="portrait-frame">
+          {/* Split Hero Box: Framed Photo + Baby-Blue Striped Details */}
+          <div className="hero-split-box">
+            {/* Left Photo Pane */}
+            <div className="hero-photo-pane">
               <img
                 src={ProfileImage}
                 alt={personalInfo.name}
-                className="portrait-img"
+                className="hero-photo-img"
               />
             </div>
 
-            {/* Floating Highlight Badges */}
-            <div className="floating-badge badge-top">
-              <div className="floating-badge-icon">
-                <Icon name="GraduationCap" size={16} />
+            {/* Right Details Pane with Baby Blue Stripes */}
+            <div className="hero-details-pane">
+              {/* Rotating Rubber Stamp Badge */}
+              <div className="stamp-badge-wrapper" title="Open to OJT / Internship Starting November 16, 2026">
+                <svg viewBox="0 0 100 100" className="stamp-badge-svg">
+                  <path
+                    id="stampCirclePath"
+                    d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                    fill="none"
+                  />
+                  <circle cx="50" cy="50" r="44" fill="none" stroke="#F6A838" strokeWidth="1.5" strokeDasharray="3,2" />
+                  <circle cx="50" cy="50" r="32" fill="#F6A838" opacity="0.15" />
+                  <text fill="#A35B07" fontSize="8.2" fontWeight="800" letterSpacing="1.2">
+                    <textPath href="#stampCirclePath" startOffset="0%">
+                      OPEN TO OJT ✱ BULSU BUSTOS ✱ 2026 ✱
+                    </textPath>
+                  </text>
+                  <text x="50" y="54" textAnchor="middle" fill="#8C331E" fontSize="12" fontWeight="900" fontFamily="Fraunces, serif">
+                    GD
+                  </text>
+                </svg>
               </div>
-              <div className="floating-badge-text">
-                <span className="badge-subtitle">Education</span>
-                <strong>BS Information Tech</strong>
-              </div>
-            </div>
 
-            <div className="floating-badge badge-bottom">
-              <div className="floating-badge-icon emerald">
-                <Icon name="CheckCircle" size={16} />
-              </div>
-              <div className="floating-badge-text">
-                <span className="badge-subtitle">Status</span>
-                <strong>Ready for Internship</strong>
+              {/* Editorial Kicker & Headline */}
+              <p className="hero-details-kicker">a dedicated full-stack developer</p>
+              <h2 className="hero-details-headline">
+                Functional Web Applications & Thoughtful Systems
+              </h2>
+
+              <p className="hero-details-bio">
+                Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. Passionate about turning ideas into functional, practical, and clean web applications.
+              </p>
+
+              {/* Pill Action Buttons */}
+              <div className="hero-details-cta-row">
+                <a href="#projects" className="btn btn-primary">
+                  <span>View Projects</span>
+                </a>
+                <a
+                  href="/Gellie Anne Dela Cruz_Resume.pdf"
+                  download="Gellie Anne Dela Cruz_Resume.pdf"
+                  className="btn btn-secondary"
+                  title="Download actual PDF Resume"
+                >
+                  <Icon name="Download" size={15} />
+                  <span>Download Resume (PDF)</span>
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Marquee Ticker Strip */}
+      <div className="ticker-strip" aria-hidden="true">
+        <div className="ticker-inner">
+          <div className="ticker-track">
+            {tickerItems.concat(tickerItems).map((text, idx) => (
+              <span key={idx} className="ticker-item">
+                <span>{text}</span>
+                <span className="ticker-star">✱</span>
+              </span>
+            ))}
+          </div>
+          <div className="ticker-track">
+            {tickerItems.concat(tickerItems).map((text, idx) => (
+              <span key={`dup-${idx}`} className="ticker-item">
+                <span>{text}</span>
+                <span className="ticker-star">✱</span>
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
-    </section>
+    </>
   );
 }

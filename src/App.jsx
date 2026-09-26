@@ -13,20 +13,37 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <>
-      <Navbar />
-      <main id="main-content">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Education />
-        <Achievements />
-        <ResumeSection />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <div className="editorial-site-wrapper">
+      {/* Left Terracotta Margin with Vertical Text */}
+      <aside className="editorial-margin margin-left" aria-hidden="true">
+        <div className="margin-track">
+          <span>PORTFOLIO 2026 ✱ GELLIE ANNE DELA CRUZ ✱ BULACAN STATE UNIVERSITY</span>
+        </div>
+      </aside>
+
+      {/* Main Canvas */}
+      <div className="editorial-canvas">
+        <Navbar />
+        <main id="main-content">
+          <Hero />
+          <About />
+          <Projects />
+          <Skills />
+          <Experience />
+          <Education />
+          <Achievements />
+          <ResumeSection />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+
+      {/* Right Terracotta Margin with Vertical Text */}
+      <aside className="editorial-margin margin-right" aria-hidden="true">
+        <div className="margin-track">
+          <span>FULL-STACK WEB DEVELOPER ✱ OPEN TO OJT NOV 2026 ✱ SYSTEM BUILDER</span>
+        </div>
+      </aside>
+    </div>
   );
 }
