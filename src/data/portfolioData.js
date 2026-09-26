@@ -17,9 +17,9 @@ export const personalInfo = {
   status: "Full-Stack Web Developer — BulSU Bustos",
   location: "Baliuag City, Bulacan, Philippines",
   shortBio:
-    "Full-Stack Web Developer focused on building functional, user-friendly, and practical web applications.",
+    "Full-Stack Web Developer & Designer passionate about creating clean, aesthetic, and functional web applications.",
   fullBio:
-    "I am a Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. I am passionate about turning ideas into functional and user-friendly web applications while continuously improving my development skills. I have hands-on experience in front-end and back-end development, database management, API integration, and developing web, desktop, and system-based projects. I enjoy working with modern web technologies and creating clean, efficient, and practical solutions.",
+    "I am a Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. I genuinely love designing websites and turning ideas into clean, functional, and user-friendly digital solutions. Experienced in frontend UI/UX design, full-stack web development, database management, and API integration, I take pride in crafting thoughtful interfaces backed by reliable, practical code.",
   email: "gellieascanodelacruz@gmail.com",
   github: "https://github.com/gellieascanodelacruz-rgb",
   linkedin: "https://linkedin.com/in/gellie-anne-dela-cruz-230854291",

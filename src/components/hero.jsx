@@ -72,25 +72,69 @@ export default function Hero() {
                 </span>
               </div>
 
-              {/* Pill Action Buttons */}
-              <div className="hero-details-cta-row">
-                <a href="#projects" className="btn btn-primary">
-                  <Icon name="Layers" size={16} />
-                  <span>View Projects</span>
-                </a>
-                <a
-                  href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
-                  download="Gellie_Anne_Dela_Cruz_Resume.pdf"
-                  className="btn btn-secondary"
-                  title="Download actual PDF Resume"
-                >
-                  <Icon name="Download" size={16} />
-                  <span>Download Resume</span>
-                </a>
-                <a href="#contact" className="btn btn-outline">
-                  <Icon name="Mail" size={16} />
-                  <span>Contact Me</span>
-                </a>
+              {/* Clean Action Buttons & Contact Pills */}
+              <div className="hero-cta-wrapper">
+                <div className="hero-primary-btns">
+                  <a href="#projects" className="btn btn-primary">
+                    <Icon name="Layers" size={16} />
+                    <span>View Projects</span>
+                  </a>
+                  <a
+                    href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
+                    download="Gellie_Anne_Dela_Cruz_Resume.pdf"
+                    className="btn btn-secondary"
+                    title="Download PDF Resume"
+                  >
+                    <Icon name="Download" size={16} />
+                    <span>Download Resume</span>
+                  </a>
+                </div>
+
+                <div className="hero-social-dock" aria-label="Quick Contacts and Profiles">
+                  <a
+                    href={personalInfo.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-social-btn github"
+                    title="GitHub Profile"
+                    aria-label="GitHub Profile"
+                  >
+                    <Icon name="Github" size={16} />
+                    <span>GitHub</span>
+                  </a>
+
+                  <a
+                    href={personalInfo.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-social-btn linkedin"
+                    title="LinkedIn Profile"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <Icon name="Linkedin" size={16} />
+                    <span>LinkedIn</span>
+                  </a>
+
+                  <a
+                    href={`mailto:${personalInfo.email}`}
+                    className="hero-social-btn email"
+                    title={`Send Email to ${personalInfo.email}`}
+                    aria-label="Send Email"
+                  >
+                    <Icon name="Mail" size={16} />
+                    <span>Email</span>
+                  </a>
+
+                  <a
+                    href="#contact"
+                    className="hero-social-btn contact"
+                    title="Get In Touch / Contact Section"
+                    aria-label="Contact Section"
+                  >
+                    <Icon name="Send" size={15} />
+                    <span>Contact</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

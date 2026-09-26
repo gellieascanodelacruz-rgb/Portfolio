@@ -808,30 +808,6 @@ a {
   line-height: 1.6;
 }
 
-/* Decorative SVG Arrows */
-.callout-arrow-left,
-.callout-arrow-right {
-  display: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 90px;
-  height: 90px;
-  color: var(--theme-dark-red);
-  pointer-events: none;
-}
-
-@media (min-width: 980px) {
-  .callout-arrow-left {
-    display: block;
-    left: -110px;
-  }
-  .callout-arrow-right {
-    display: block;
-    right: -110px;
-  }
-}
-
 /* About 4 Info Highlight Cards */
 .about-cards-row {
   display: grid;
