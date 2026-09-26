@@ -14,12 +14,12 @@ import lodgrLogin from "../assets/images/lodgr images/LODGR Log in Page.png";
 export const personalInfo = {
   name: "Gellie Anne Dela Cruz",
   title: "Full-Stack Web Developer",
-  status: "Full-Stack Web Developer — BulSU Bustos",
+  status: "Full-Stack Web Developer",
   location: "Baliuag City, Bulacan, Philippines",
   shortBio:
     "Full-Stack Web Developer & Designer passionate about creating clean, aesthetic, and functional web applications.",
   fullBio:
-    "I am a Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. I genuinely love designing websites and turning ideas into clean, functional, and user-friendly digital solutions. Experienced in frontend UI/UX design, full-stack web development, database management, and API integration, I take pride in crafting thoughtful interfaces backed by reliable, practical code.",
+    "I am a Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development. I genuinely love designing websites and turning ideas into clean, functional, and user-friendly digital solutions. Experienced in frontend UI/UX design, full-stack web development, database management, and API integration, I take pride in crafting thoughtful interfaces backed by reliable, practical code.",
   email: "gellieascanodelacruz@gmail.com",
   github: "https://github.com/gellieascanodelacruz-rgb",
   linkedin: "https://linkedin.com/in/gellie-anne-dela-cruz-230854291",

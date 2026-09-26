@@ -20,10 +20,10 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ color: "var(--text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>
-              {personalInfo.title} · Bulacan State University – Bustos Campus.
+              {personalInfo.title} · Web & Mobile Application Development.
             </p>
-            <p style={{ color: "#fda4af", fontSize: "0.8125rem", marginTop: "0.5rem", fontFamily: "var(--font-mono)" }}>
-              {personalInfo.status}
+            <p style={{ color: "var(--theme-dark-red)", fontSize: "0.8125rem", marginTop: "0.5rem", fontFamily: "var(--font-mono)", fontWeight: 700 }}>
+              {personalInfo.location}
             </p>
           </div>
 

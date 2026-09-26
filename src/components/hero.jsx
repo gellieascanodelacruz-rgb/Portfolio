@@ -7,7 +7,7 @@ export default function Hero() {
   const tickerItems = [
     "FULL-STACK DEVELOPER",
     "BSIT 4TH YEAR",
-    "BULSU BUSTOS",
+    "UI/UX & WEB DESIGN",
     "SOFTWARE SOLUTIONS",
     "DEAN'S LISTER",
     "WEB & MOBILE APP DEV",
@@ -26,7 +26,7 @@ export default function Hero() {
               <span>{personalInfo.name}</span>
             </h1>
             <p className="retro-wordmark-sub">
-              Full-Stack Web Developer ✱ Bulacan State University – Bustos Campus
+              Full-Stack Web Developer & Designer
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function Hero() {
               </h2>
 
               <p className="hero-details-bio">
-                Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. Passionate about turning ideas into functional, practical, and clean web applications.
+                Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development. Passionate about designing websites and turning ideas into functional, practical, and clean web applications.
               </p>
 
               {/* Technical Focus Badges */}
