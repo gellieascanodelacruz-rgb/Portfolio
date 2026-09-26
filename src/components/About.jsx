@@ -6,9 +6,9 @@ export default function About() {
   return (
     <section id="about" className="section">
       <div className="container">
-        {/* Large Editorial Statement with Inline Icons */}
+        {/* Large Editorial Statement (Clean, Professional, No Emojis) */}
         <h2 className="big-editorial-statement">
-          I'm a <span className="highlight">Full-Stack Web Developer</span> 💻, an Information Technology Student 🎓, System Builder ⚙️ & Dean's Lister 🌟
+          I'm a <span className="highlight">Full-Stack Web Developer</span>, an Information Technology Student, System Builder & Dean's Lister.
         </h2>
 
         {/* Dashed Callout Box with Hand-drawn Style Arrows */}
@@ -24,7 +24,7 @@ export default function About() {
           </span>
 
           <h3 className="dashed-callout-title">
-            Want to Hire a Dedicated OJT / Intern for November 2026?!
+            Want to Hire a Dedicated OJT / Intern for November 2026?
           </h3>
 
           <p className="dashed-callout-text">

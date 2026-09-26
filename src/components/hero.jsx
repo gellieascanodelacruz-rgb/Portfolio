@@ -57,14 +57,14 @@ export default function Hero() {
                     d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                     fill="none"
                   />
-                  <circle cx="50" cy="50" r="44" fill="none" stroke="#F59E0B" strokeWidth="1.5" strokeDasharray="3,2" />
-                  <circle cx="50" cy="50" r="32" fill="#F59E0B" opacity="0.15" />
-                  <text fill="#FBBF24" fontSize="8.2" fontWeight="800" letterSpacing="1.2">
+                  <circle cx="50" cy="50" r="44" fill="none" stroke="#7A0C1A" strokeWidth="1.5" strokeDasharray="3,2" />
+                  <circle cx="50" cy="50" r="32" fill="#7A0C1A" opacity="0.08" />
+                  <text fill="#7A0C1A" fontSize="8.2" fontWeight="800" letterSpacing="1.2">
                     <textPath href="#stampCirclePath" startOffset="0%">
                       OPEN TO OJT ✱ BULSU BUSTOS ✱ 2026 ✱
                     </textPath>
                   </text>
-                  <text x="50" y="54" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="900" fontFamily="Fraunces, serif">
+                  <text x="50" y="54" textAnchor="middle" fill="#0C1836" fontSize="12" fontWeight="900" fontFamily="Fraunces, serif">
                     GD
                   </text>
                 </svg>
