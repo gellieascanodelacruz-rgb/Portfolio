@@ -5,6 +5,12 @@
  * Bulacan State University – Bustos Campus
  */
 
+import osoadocsLogin from "../assets/images/OSOADOCS/LOGIN OSOADOCS.png";
+import lodgrHome from "../assets/images/lodgr images/HOME PAGE.png";
+import lodgrProduct from "../assets/images/lodgr images/PRODUCT PREVIEW.png";
+import lodgrHost from "../assets/images/lodgr images/HOST POV.png";
+import lodgrLogin from "../assets/images/lodgr images/LODGR Log in Page.png";
+
 export const personalInfo = {
   name: "Gellie Anne Dela Cruz",
   title: "Full-Stack Web Developer",
@@ -17,7 +23,7 @@ export const personalInfo = {
   email: "gellieascanodelacruz@gmail.com",
   github: "https://github.com/gellieascanodelacruz-rgb",
   linkedin: "https://linkedin.com/in/gellie-anne-dela-cruz-230854291",
-  resumeUrl: "/Gellie Anne Dela Cruz_Resume.pdf",
+  resumeUrl: "/Gellie_Anne_Dela_Cruz_Resume.pdf",
   aboutCards: [
     {
       id: "card-status",
@@ -168,6 +174,10 @@ export const projectsData = [
     ],
     github: "https://github.com/gellieascanodelacruz-rgb",
     demo: "https://www.osoadocs.website/",
+    image: osoadocsLogin,
+    gallery: [
+      { src: osoadocsLogin, title: "OSOADOCS — Centralized Student Organization Document Portal" },
+    ],
     caseStudy: {
       overview:
         "OSOADOCS was designed to eliminate paperwork bottlenecks in student organizations. It centralizes all official records into a clean digital workflow with end-to-end tracking.",
@@ -210,6 +220,13 @@ export const projectsData = [
     ],
     github: "https://github.com/gellieascanodelacruz-rgb",
     demo: "https://lodgrs.vercel.app",
+    image: lodgrHome,
+    gallery: [
+      { src: lodgrHome, title: "LODGR — Home Page & Featured Accommodation Listings" },
+      { src: lodgrProduct, title: "LODGR — Product Details & Room Booking Preview" },
+      { src: lodgrHost, title: "LODGR — Host Management Dashboard & Reservation Views" },
+      { src: lodgrLogin, title: "LODGR — Secure Firebase Authentication Portal" },
+    ],
     caseStudy: {
       overview:
         "LODGR is an accommodation marketplace concept built with modern ReactJS and Firebase. It demonstrates real-time user authentication and third-party payment gateway integration.",
@@ -243,6 +260,8 @@ export const projectsData = [
       "Engineered an efficient Java desktop application with a MySQL database backend that automates inventory product management, checkout calculations, and sales logging.",
     technologies: ["Java", "MySQL", "Desktop Application", "SQL"],
     role: "Software Developer",
+    image: null,
+    gallery: [],
     features: [
       "Manages product information, categories, and unit pricing",
       "Records sales transactions with fast tallying and checkout calculation",

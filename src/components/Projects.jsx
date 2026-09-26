@@ -63,46 +63,105 @@ export default function Projects() {
             </h2>
           </div>
 
-          {/* 3 Prominent White Pod Cards */}
+          {/* 3 Prominent White Pod Cards with System Previews */}
           <div className="projects-pod-grid">
             {projectsData.map((project, idx) => (
               <article key={project.id} className="project-pod-card">
-                {getDoodleIcon(idx)}
-
-                <span className="project-pod-kicker">{getKickerText(idx)}</span>
-                <h3 className="project-pod-name">{project.title}</h3>
-                <p className="project-pod-desc">{project.summary || project.description}</p>
-
-                {/* Tech Pills */}
-                <div className="project-pod-tags">
-                  {(project.technologies || project.tags || []).map((tech) => (
-                    <span key={tech} className="project-pod-tag">
-                      {tech}
+                {/* System Preview Window */}
+                <div
+                  className="project-preview-window"
+                  onClick={() => setSelectedProject(project)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === "Enter" && setSelectedProject(project)}
+                  title={`Inspect ${project.title} system screenshots`}
+                >
+                  <div className="preview-window-bar">
+                    <div className="preview-window-dots">
+                      <span className="dot dot-red" />
+                      <span className="dot dot-yellow" />
+                      <span className="dot dot-green" />
+                    </div>
+                    <span className="preview-window-url">
+                      {project.demo && project.demo.startsWith("http")
+                        ? project.demo.replace(/^https?:\/\//, "")
+                        : `${project.id.toLowerCase()}.system/desktop`}
                     </span>
-                  ))}
+                  </div>
+
+                  <div className="preview-window-media">
+                    {project.image ? (
+                      <div className="preview-img-container">
+                        <img
+                          src={project.image}
+                          alt={`${project.title} system preview`}
+                          className="preview-window-img"
+                        />
+                        <div className="preview-zoom-badge">
+                          <Icon name="Eye" size={13} />
+                          <span>View Screens</span>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="preview-placeholder-box">
+                        <div className="preview-placeholder-inner">
+                          {getDoodleIcon(idx)}
+                          <span className="preview-placeholder-title">SellSmart POS Interface</span>
+                          <span className="preview-placeholder-sub">Java & MySQL Architecture</span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
 
-                {/* Action Buttons Row */}
-                <div className="project-pod-actions">
-                  <button
-                    type="button"
-                    onClick={() => setSelectedProject(project)}
-                    className="btn project-pod-btn btn-primary"
-                  >
-                    <span>Case Study</span>
-                  </button>
-                  {project.demo && project.demo.startsWith("http") && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn project-pod-btn btn-secondary"
-                      title={`Visit ${project.title} live website`}
-                    >
-                      <Icon name="ExternalLink" size={14} />
-                      <span>Live Demo</span>
-                    </a>
-                  )}
+                <div className="project-pod-content">
+                  <span className="project-pod-kicker">{getKickerText(idx)}</span>
+                  <h3 className="project-pod-name">{project.title}</h3>
+                  <p className="project-pod-desc">{project.summary || project.description}</p>
+
+                  {/* Tech Pills */}
+                  <div className="project-pod-tags">
+                    {(project.technologies || project.tags || []).map((tech) => (
+                      <span key={tech} className="project-pod-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Action Buttons: Spacious & Well Aligned */}
+                  <div className="project-card-actions">
+                    {project.demo && project.demo.startsWith("http") ? (
+                      <>
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-primary project-action-btn"
+                          title={`Visit ${project.title} live website`}
+                        >
+                          <Icon name="ExternalLink" size={14} />
+                          <span>Live Demo</span>
+                        </a>
+                        <button
+                          type="button"
+                          onClick={() => setSelectedProject(project)}
+                          className="btn btn-secondary project-action-btn"
+                        >
+                          <Icon name="FileText" size={14} />
+                          <span>Case Study</span>
+                        </button>
+                      </>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => setSelectedProject(project)}
+                        className="btn btn-primary project-action-btn project-action-btn-wide"
+                      >
+                        <Icon name="FileText" size={14} />
+                        <span>Case Study & Architecture</span>
+                      </button>
+                    )}
+                  </div>
                 </div>
               </article>
             ))}

@@ -35,8 +35,8 @@ export default function ResumeSection() {
 
             <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
               <a
-                href="/Gellie Anne Dela Cruz_Resume.pdf"
-                download="Gellie Anne Dela Cruz_Resume.pdf"
+                href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
+                download="Gellie_Anne_Dela_Cruz_Resume.pdf"
                 className="btn btn-primary btn-sm"
                 onClick={handleDownloadClick}
               >
@@ -44,7 +44,7 @@ export default function ResumeSection() {
                 <span>Download Resume</span>
               </a>
               <a
-                href="/Gellie Anne Dela Cruz_Resume.pdf"
+                href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary btn-sm"

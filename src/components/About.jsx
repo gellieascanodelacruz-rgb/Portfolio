@@ -32,13 +32,13 @@ export default function About() {
           </p>
 
           <a
-            href="/Gellie Anne Dela Cruz_Resume.pdf"
-            download="Gellie Anne Dela Cruz_Resume.pdf"
+            href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
+            download="Gellie_Anne_Dela_Cruz_Resume.pdf"
             className="btn btn-primary"
             title="Download actual PDF Resume"
           >
             <Icon name="Download" size={16} />
-            <span>Download My Resume (PDF)</span>
+            <span>Download Resume</span>
           </a>
 
           {/* Right Arrow (SVG) */}

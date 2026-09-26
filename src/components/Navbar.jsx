@@ -7,12 +7,12 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { label: "(ABOUT)", href: "#about" },
-    { label: "(PROJECTS)", href: "#projects" },
-    { label: "(SKILLS)", href: "#skills" },
-    { label: "(EDUCATION)", href: "#education" },
-    { label: "(RESUME)", href: "#resume" },
-    { label: "(CONTACT)", href: "#contact" },
+    { label: "ABOUT", href: "#about" },
+    { label: "PROJECTS", href: "#projects" },
+    { label: "SKILLS", href: "#skills" },
+    { label: "EDUCATION", href: "#education" },
+    { label: "RESUME", href: "#resume" },
+    { label: "CONTACT", href: "#contact" },
   ];
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function Navbar() {
           <span>gellie anne dela cruz</span>
         </a>
 
-        {/* Desktop Parenthesized Retro Links */}
+        {/* Desktop Retro Links */}
         <nav aria-label="Main Navigation">
           <ul className="navbar-nav-links">
             {navItems.map((item) => (
@@ -60,13 +60,13 @@ export default function Navbar() {
         {/* Resume Button */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
           <a
-            href="/Gellie Anne Dela Cruz_Resume.pdf"
-            download="Gellie Anne Dela Cruz_Resume.pdf"
+            href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
+            download="Gellie_Anne_Dela_Cruz_Resume.pdf"
             className="navbar-resume-btn"
             title="Download PDF Resume"
           >
             <Icon name="Download" size={13} />
-            <span>Resume (PDF)</span>
+            <span>Resume</span>
           </a>
 
           {/* Hamburger for mobile */}
@@ -93,14 +93,14 @@ export default function Navbar() {
           </a>
         ))}
         <a
-          href="/Gellie Anne Dela Cruz_Resume.pdf"
-          download="Gellie Anne Dela Cruz_Resume.pdf"
+          href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
+          download="Gellie_Anne_Dela_Cruz_Resume.pdf"
           className="btn btn-primary btn-sm"
           style={{ marginTop: "0.5rem" }}
           onClick={() => setMobileMenuOpen(false)}
         >
           <Icon name="Download" size={14} />
-          <span>Download Resume (PDF)</span>
+          <span>Download Resume</span>
         </a>
       </div>
     </header>

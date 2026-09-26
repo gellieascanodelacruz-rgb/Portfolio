@@ -83,6 +83,29 @@ export default function ProjectModal({ project, onClose }) {
             <p>{project.caseStudy.challengesAndLearnings}</p>
           </div>
 
+          {/* System Interface & Screenshots Preview */}
+          {project.gallery && project.gallery.length > 0 && (
+            <div className="modal-section">
+              <h4 className="modal-section-title">
+                System Interface & Screenshots ({project.gallery.length})
+              </h4>
+              <div className="modal-gallery-grid">
+                {project.gallery.map((gItem, idx) => (
+                  <div key={idx} className="modal-gallery-item">
+                    <div className="modal-gallery-img-wrap">
+                      <img
+                        src={gItem.src}
+                        alt={gItem.title}
+                        className="modal-gallery-img"
+                      />
+                    </div>
+                    <p className="modal-gallery-caption">{gItem.title}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Technologies Used */}
           <div className="modal-section">
             <h4 className="modal-section-title">Technologies Used</h4>
@@ -96,17 +119,19 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           {/* Action Links */}
-          <div style={{ display: "flex", gap: "1rem", marginTop: "1rem", flexWrap: "wrap" }}>
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary btn-sm"
-              title="Visit Live Demo"
-            >
-              <Icon name="ExternalLink" size={16} />
-              <span>Visit Demo</span>
-            </a>
+          <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem", flexWrap: "wrap" }}>
+            {project.demo && project.demo.startsWith("http") && (
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-sm"
+                title="Visit Live Application"
+              >
+                <Icon name="ExternalLink" size={16} />
+                <span>Visit Live Application</span>
+              </a>
+            )}
             <a
               href={project.github}
               target="_blank"

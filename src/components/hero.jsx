@@ -79,13 +79,13 @@ export default function Hero() {
                   <span>View Projects</span>
                 </a>
                 <a
-                  href="/Gellie Anne Dela Cruz_Resume.pdf"
-                  download="Gellie Anne Dela Cruz_Resume.pdf"
+                  href="/Gellie_Anne_Dela_Cruz_Resume.pdf"
+                  download="Gellie_Anne_Dela_Cruz_Resume.pdf"
                   className="btn btn-secondary"
                   title="Download actual PDF Resume"
                 >
                   <Icon name="Download" size={16} />
-                  <span>Download Resume (PDF)</span>
+                  <span>Download Resume</span>
                 </a>
                 <a href="#contact" className="btn btn-outline">
                   <Icon name="Mail" size={16} />
