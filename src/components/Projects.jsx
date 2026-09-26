@@ -52,7 +52,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="section section-cream">
+    <section id="projects" className="section">
       <div className="container">
         {/* Buttercup Yellow Pod Container */}
         <div className="projects-pod-container">

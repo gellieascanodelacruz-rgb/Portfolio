@@ -20,29 +20,34 @@ export default function Hero() {
     <>
       <section id="home" className="hero-editorial-section">
         <div className="container">
-          {/* Centered Retro Wordmark / Logo */}
+          {/* Centered Editorial Wordmark */}
           <div className="retro-wordmark-container">
             <h1 className="retro-wordmark">
-              <span>gellie anne</span>
-              <span>dela cruz</span>
+              <span>{personalInfo.name}</span>
             </h1>
             <p className="retro-wordmark-sub">
               Full-Stack Web Developer ✱ Bulacan State University – Bustos Campus
             </p>
           </div>
 
-          {/* Split Hero Box: Framed Photo + Baby-Blue Striped Details */}
+          {/* Split Hero Box: Full Size Portrait + Editorial Details */}
           <div className="hero-split-box">
-            {/* Left Photo Pane */}
+            {/* Left Photo Pane with Full Size Portrait (No Cropping) */}
             <div className="hero-photo-pane">
-              <img
-                src={ProfileImage}
-                alt={personalInfo.name}
-                className="hero-photo-img"
-              />
+              <div className="hero-photo-frame">
+                <img
+                  src={ProfileImage}
+                  alt={personalInfo.name}
+                  className="hero-photo-img"
+                />
+                <div className="portrait-floating-tag">
+                  <span className="pulse-dot" />
+                  <span>Open to OJT • Nov 16, 2026</span>
+                </div>
+              </div>
             </div>
 
-            {/* Right Details Pane with Baby Blue Stripes */}
+            {/* Right Details Pane in Deep Navy with Crimson & Gold Accents */}
             <div className="hero-details-pane">
               {/* Rotating Rubber Stamp Badge */}
               <div className="stamp-badge-wrapper" title="Open to OJT / Internship Starting November 16, 2026">
@@ -52,14 +57,14 @@ export default function Hero() {
                     d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                     fill="none"
                   />
-                  <circle cx="50" cy="50" r="44" fill="none" stroke="#F6A838" strokeWidth="1.5" strokeDasharray="3,2" />
-                  <circle cx="50" cy="50" r="32" fill="#F6A838" opacity="0.15" />
-                  <text fill="#A35B07" fontSize="8.2" fontWeight="800" letterSpacing="1.2">
+                  <circle cx="50" cy="50" r="44" fill="none" stroke="#F59E0B" strokeWidth="1.5" strokeDasharray="3,2" />
+                  <circle cx="50" cy="50" r="32" fill="#F59E0B" opacity="0.15" />
+                  <text fill="#FBBF24" fontSize="8.2" fontWeight="800" letterSpacing="1.2">
                     <textPath href="#stampCirclePath" startOffset="0%">
                       OPEN TO OJT ✱ BULSU BUSTOS ✱ 2026 ✱
                     </textPath>
                   </text>
-                  <text x="50" y="54" textAnchor="middle" fill="#8C331E" fontSize="12" fontWeight="900" fontFamily="Fraunces, serif">
+                  <text x="50" y="54" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="900" fontFamily="Fraunces, serif">
                     GD
                   </text>
                 </svg>
@@ -75,9 +80,26 @@ export default function Hero() {
                 Bachelor of Science in Information Technology student majoring in Web and Mobile Application Development at Bulacan State University – Bustos Campus. Passionate about turning ideas into functional, practical, and clean web applications.
               </p>
 
+              {/* Technical Focus Badges */}
+              <div className="hero-focus-tags">
+                <span className="focus-tag">
+                  <Icon name="Code" size={13} />
+                  <span>Web Development</span>
+                </span>
+                <span className="focus-tag">
+                  <Icon name="Database" size={13} />
+                  <span>Database Systems</span>
+                </span>
+                <span className="focus-tag">
+                  <Icon name="Layers" size={13} />
+                  <span>Full-Stack & APIs</span>
+                </span>
+              </div>
+
               {/* Pill Action Buttons */}
               <div className="hero-details-cta-row">
                 <a href="#projects" className="btn btn-primary">
+                  <Icon name="Layers" size={16} />
                   <span>View Projects</span>
                 </a>
                 <a
@@ -86,8 +108,12 @@ export default function Hero() {
                   className="btn btn-secondary"
                   title="Download actual PDF Resume"
                 >
-                  <Icon name="Download" size={15} />
+                  <Icon name="Download" size={16} />
                   <span>Download Resume (PDF)</span>
+                </a>
+                <a href="#contact" className="btn btn-outline">
+                  <Icon name="Mail" size={16} />
+                  <span>Contact Me</span>
                 </a>
               </div>
             </div>

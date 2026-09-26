@@ -4,7 +4,7 @@ import { Icon } from "./Icons";
 
 export default function About() {
   return (
-    <section id="about" className="section section-cream">
+    <section id="about" className="section">
       <div className="container">
         {/* Large Editorial Statement with Inline Icons */}
         <h2 className="big-editorial-statement">
